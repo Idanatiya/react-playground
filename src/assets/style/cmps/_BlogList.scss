@@ -1,0 +1,12 @@
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 450px));
+    grid-gap: 15px;
+    padding: 1rem;
+    justify-content: center;
+
+    
+}
+.title {
+    padding: 2rem;
+}

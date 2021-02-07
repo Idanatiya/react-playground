@@ -1,0 +1,75 @@
+
+
+
+.blog-preview {
+    position: relative;
+    .blog-header {
+        background-color: #293462;
+        display: flex;
+        color: #fff;
+        border-top-left-radius: .4rem;
+        border-top-right-radius: .4rem;
+        height: 1.25rem;
+        padding: 0.7rem;
+        font-size: .9rem;
+        z-index: 22;
+        
+    }
+
+    .blog-content {
+        height: 200px;
+        border-radius: 5px;
+        background-color: #fff;
+        border-bottom: 3px solid #d2d5da;
+        position: relative;        
+        .blog-mask {
+            opacity: 0;
+            position: absolute;
+            color: white;
+            background-color: rgba(0,0,0,0.8);
+            width: 100%;
+            height: 100%;
+            transition: opacity .4s;
+            cursor: pointer;
+            
+            &:hover {
+                opacity: 1;
+            }
+            
+            .btn-delete {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background: crimson;
+                padding: .5rem .8rem;
+                border-top-left-radius: 0.5rem;
+                transition: .3s ;
+
+                &:hover {
+                    transform: translateY(-2px)
+                }
+            }
+        }
+    }
+    
+    
+    
+}
+
+
+.console-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 2px;
+    &.red {
+        background-color: #ff6057;
+    }
+    &.yellow {
+      background-color: #ffc22e;
+    }
+    &.green {
+      background-color: #28ca40;
+    }
+}
